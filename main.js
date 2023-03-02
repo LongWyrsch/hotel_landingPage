@@ -1,23 +1,65 @@
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
 
-setupCounter(document.querySelector('#counter'))
+const handleLeftArrow = () => { 
+  let firstImg = document.getElementsByClassName('first')[0]
+  let secondImg = document.getElementsByClassName('second')[0]
+  let thirdImg = document.getElementsByClassName('third')[0]
+  let fourthImg = document.getElementsByClassName('fourth')[0]
+  let fifthImg = document.getElementsByClassName('fifth')[0]
+  let sixthImg = document.getElementsByClassName('sixth')[0]
+  let seventhImg = document.getElementsByClassName('seventh')[0]
+  
+  firstImg.className = 'seventh'
+  secondImg.className = 'first'
+  thirdImg.className = 'second'
+  fourthImg.className = 'third'
+  fifthImg.className = 'fourth'
+  sixthImg.className = 'fifth'
+  seventhImg.className = 'sixth'
+ }
+
+ const handleRightArrow = () => { 
+  let firstImg = document.getElementsByClassName('first')[0]
+  let secondImg = document.getElementsByClassName('second')[0]
+  let thirdImg = document.getElementsByClassName('third')[0]
+  let fourthImg = document.getElementsByClassName('fourth')[0]
+  let fifthImg = document.getElementsByClassName('fifth')[0]
+  let sixthImg = document.getElementsByClassName('sixth')[0]
+  let seventhImg = document.getElementsByClassName('seventh')[0]
+
+  firstImg.className = 'second'
+  secondImg.className = 'third'
+  thirdImg.className = 'fourth'
+  fourthImg.className = 'fifth'
+  fifthImg.className = 'sixth'
+  sixthImg.className = 'seventh'
+  seventhImg.className = 'first'
+ }
+
+let chevronLeft = document.getElementsByClassName('chevronLeft')[0]
+chevronLeft.addEventListener("click", handleLeftArrow, false);
+
+let chevronRight = document.getElementsByClassName('chevronRight')[0]
+chevronRight.addEventListener("click", handleRightArrow, false);
+
+
+let gallery = document.getElementById('gallery')
+let about = document.getElementById('about')
+let duisburg = document.getElementById('duisburg')
+let contact = document.getElementById('contact')
+
+gallery.addEventListener('click', () => { document.getElementsByClassName("gallery")[0].scrollIntoView({behavior: "smooth"}) })
+about.addEventListener('click', () => { document.getElementsByClassName("about")[0].scrollIntoView({behavior: "smooth"}) })
+duisburg.addEventListener('click', () => { document.getElementsByClassName("duisburg")[0].scrollIntoView({behavior: "smooth"}) })
+contact.addEventListener('click', () => { document.getElementsByClassName("contact")[0].scrollIntoView({behavior: "smooth"}) })
+
+
+var form = document.getElementById("form");
+function handleForm(event) { 
+  event.preventDefault(); 
+  document.querySelector('input[type="email"]').value = ''
+  document.querySelector('textarea').value = ''
+  
+} 
+form.addEventListener('submit', handleForm);

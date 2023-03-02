@@ -1,13 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="./public/hotel.png" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://unpkg.com/feather-icons"></script>
+		<title>Hotel Duisburg</title>
+	</head>
+	<body>
+		<header>
+			<div class="gradient"></div>
+			<nav>
+				<button id="gallery">Photos</button>
+				<button id="about">About Us</button>
+				<button id="duisburg">Duisburg</button>
+				<button id="contact">Contact</button>
+			</nav>
+			<div class="heroText">
+				<div class="welcome">Welcome</div>
+				<div class="welcome">to <span class="hotelName">Hotel Duisburg</span></div>
+				<div class="ready">Your room is ready!</div>
+			</div>
+		</header>
+		<section class="gallery">
+			<h1>Our facilities</h1>
+			<div class="carousel">
+				<img class="first" src="/public/doubleBed.jpeg" alt="Double bed" />
+				<img class="second" src="/public/queenBed.jpeg" alt="Queen bed" />
+				<img class="third" src="/public/singleBed.jpeg" alt="Single bed" />
+				<img class="fourth" src="/public/bar.jpeg" alt="Bar" />
+				<img class="fifth" src="/public/restaurant.jpeg" alt="Restaurant" />
+				<img class="sixth" src="/public/gym.jpeg" alt="Gym" />
+				<img class="seventh" src="/public/pool.jpeg" alt="Pool" />
+				<div class="arrows">
+					<svg class="chevronLeft" xmlns="http://www.w3.org/2000/svg" viewBox="-8 -5 24 24" width="100" height="120" fill="white">
+						<path d="M2.757 7l4.95 4.95a1 1 0 1 1-1.414 1.414L.636 7.707a1 1 0 0 1 0-1.414L6.293.636A1 1 0 0 1 7.707 2.05L2.757 7z"></path>
+					</svg>
+					<svg class="chevronRight" xmlns="http://www.w3.org/2000/svg" viewBox="-8 -5 24 24" width="100" height="120" fill="white">
+						<path d="M5.314 7.071l-4.95-4.95A1 1 0 0 1 1.778.707l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l4.95-4.95z"></path>
+					</svg>
+				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="gradient"></div>
+			<div class="text">
+				<h1>Our hotel</h1>
+				<p>Established in the heart of Duisburg, we have been a staple landmark of the city’s landscape for 45 years. You will find everything you need in our stateoftheart facilities:</p>
+				<ul>
+					<li>
+						<div class="icon rooms"></div>
+						250 rooms
+					</li>
+					<li>
+						<div class="icon reception"></div>
+						24hr reception desk
+					</li>
+					<li>
+						<div class="icon gym"></div>
+						Gym
+					</li>
+					<li>
+						<div class="icon pool"></div>
+						Pool
+					</li>
+					<li>
+						<div class="icon bar"></div>
+						Bar
+					</li>
+					<li>
+						<div class="icon restaurant"></div>
+						Restaurant
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="duisburg">
+			<div class="gradient"></div>
+			<div class="text">
+				<h1>In the heart of Duisburg</h1>
+				<p>With everything that Duisburg has to offer, you will never run out of things to do.</p>
+				<p>Let our tour guides show you this city’s hidden gems</p>
+			</div>
+		</section>
+		<section class="contact">
+			<div class="details">
+				<h1>Contact us</h1>
+				<div>+49 176 1234 1234</div>
+				<div>hotelduisburg@hotels.com</div>
+				<p>Otto-Keller-Straße 17</p>
+				<p>47057 Duisburg</p>
+				<p>Deutschland</p>
+			</div>
+			<form id="form">
+				<label for="email">Email:</label><br />
+				<input type="email" id="email" placeholder="müller@gmail.com" /><br /><br />
+				<label for="message">Message:</label><br />
+				<textarea name="message" form="form" placeholder="Enter message here.."></textarea>
+				<input type="submit" />
+			</form>
+		</section>
+		<script type="module" src="/main.js"></script>
+	</body>
 </html>
