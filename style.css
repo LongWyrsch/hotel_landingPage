@@ -9,7 +9,7 @@ html {
 }
 
 header {
-	background-image: url('/public/hero.jpeg');
+	background-image: url('./public/hero.jpeg');
 	background-size: cover;
 	background-position: 0 -260px;
 	height: 80vh;
@@ -147,7 +147,7 @@ section {
 }
 
 .about {
-	background-image: url('/public/hotelBuilding.jpeg');
+	background-image: url('./public/hotelBuilding.jpeg');
 	background-size: cover;
 	background-position: 0 -550px;
 	position: relative;
@@ -186,27 +186,27 @@ section {
 }
 
 .rooms{
-  background-image: url('/public/icons/bed.svg');
+  background-image: url('./public/icons/bed.svg');
   background-size: cover;
 }
 .reception{
-  background-image: url('/public/icons/reception.svg');
+  background-image: url('./public/icons/reception.svg');
   background-size: cover;
 }
 .gym{
-  background-image: url('/public/icons/gym.svg');
+  background-image: url('./public/icons/gym.svg');
   background-size: cover;
 }
 .pool{
-  background-image: url('/public/icons/pool.svg');
+  background-image: url('./public/icons/pool.svg');
   background-size: cover;
 }
 .bar{
-  background-image: url('/public/icons/bar.svg');
+  background-image: url('./public/icons/bar.svg');
   background-size: cover;
 }
 .restaurant{
-  background-image: url('/public/icons/restaurant.svg');
+  background-image: url('./public/icons/restaurant.svg');
   background-size: cover;
 }
 
@@ -217,7 +217,7 @@ section {
 }
 
 .duisburg {
-	background-image: url('/public/duisburg.jpeg');
+	background-image: url('./public/duisburg.jpeg');
 	background-size: cover;
 	background-position: 0px -350px;
 	position: relative;
@@ -271,17 +271,17 @@ section {
 }
 
 .phone{
-  background-image: url('/public/icons/phone.svg');
+  background-image: url('./public/icons/phone.svg');
   background-size: cover;
   
 }
 .email{
-  background-image: url('/public/icons/email.svg');
+  background-image: url('./public/icons/email.svg');
   background-size: cover;
 }
 
 .location{
-  background-image: url('/public/icons/location.svg');
+  background-image: url('./public/icons/location.svg');
   background-size: cover;
 }
 
