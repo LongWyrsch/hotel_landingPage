@@ -9,7 +9,7 @@ html {
 }
 
 header {
-	background-image: url('/public/hero.jpg');
+	background-image: url('/public/hero.jpeg');
 	background-size: cover;
 	background-position: 0 -260px;
 	height: 80vh;
@@ -147,7 +147,7 @@ section {
 }
 
 .about {
-	background-image: url('/public/hotelBuilding.jpg');
+	background-image: url('/public/hotelBuilding.jpeg');
 	background-size: cover;
 	background-position: 0 -550px;
 	position: relative;
@@ -217,7 +217,7 @@ section {
 }
 
 .duisburg {
-	background-image: url('/public/duisburg.jpg');
+	background-image: url('/public/duisburg.jpeg');
 	background-size: cover;
 	background-position: 0px -350px;
 	position: relative;
